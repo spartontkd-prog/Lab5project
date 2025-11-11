@@ -27,7 +27,7 @@ int main()
 		int guess = -1;
 		int attempt = 0;
 		int ranNum = getranNum(min, max); // choses the random number for you to guess.
-		
+
 		while (attempt < maxattempts)	//Setting while loop so that it will stop if you guess the right number or use all your attempts.
 		{
 			std::cout << "Your "<< attempt +1 << " guess\n";
@@ -38,7 +38,7 @@ int main()
 				std::cout << "Invaild input start program again, and make sure to only enter in numbers please." << std::endl;
 				return 0;
 			}
-			if (guess == ranNum)
+			if (guess == ranNum) //For if you guess the right number.
 			{
 				break;
 			}
