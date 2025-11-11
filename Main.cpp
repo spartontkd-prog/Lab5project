@@ -30,7 +30,7 @@ int main()
 
 		while (attempt < maxattempts)	//Setting while loop so that it will stop if you guess the right number or use all your attempts.
 		{
-			std::cout << "Your "<< attempt +1 << " guess\n";
+			std::cout << "Your ("<< attempt +1 << ") guess\n";
 			
 			std::cin >> guess;
 			if (!(guess)) //Fail safe in case user accidently enters in a non number.
