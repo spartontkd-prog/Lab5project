@@ -38,6 +38,10 @@ int main()
 				std::cout << "Invaild input start program again, and make sure to only enter in numbers please." << std::endl;
 				return 0;
 			}
+			if (guess > 100 || guess < 0)
+			{
+				std::cout << "number outside of range(0 to 100), please keep within range.\n";
+			}
 			if (guess == ranNum) //For if you guess the right number.
 			{
 				break;
@@ -124,7 +128,7 @@ int main()
 			case 10: std::cout << "Do you wish to keep playing " << std::endl;
 				break;
 			}
-			std::cout << "Enter Y for yes and N for no " << std::endl; //Allows user to either play game again of end game.
+			std::cout << "Enter Y for yes and N for no " << std::endl; //Allows user to either play game again or end game.
 			std::cin >> Tryagain;
 		}
     } while (Tryagain == 'Y' || Tryagain == 'y');
